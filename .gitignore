@@ -1,2 +1,5 @@
-backend/node_modules
-frontend/node_modules
+doctor/backend/node_modules
+doctor/frontend/node_modules
+
+patient/backend/node_modules
+patient/frontend/node_modules
