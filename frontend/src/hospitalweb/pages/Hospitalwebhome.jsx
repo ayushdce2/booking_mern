@@ -36,9 +36,9 @@ const hospitalwebhome = () => {
       <div>
         <div className=''>
           <p className='p-2 bg-[#A0C878] flex gap-4 justify-end'>
-            <Link to="" className='font-bold text-[#143D60]'>Patient's Login</Link>
+            <Link to="/patient" className='font-bold text-[#143D60]'>Patient's Login</Link>
              | 
-            <Link to="" className='font-bold text-[#143D60]'>Doctor's Login</Link>
+            <Link to="/doctor" className='font-bold text-[#143D60]'>Doctor's Login</Link>
           </p>
         </div>
       </div>
