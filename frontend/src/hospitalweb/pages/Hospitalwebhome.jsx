@@ -39,6 +39,8 @@ const hospitalwebhome = () => {
             <Link to="/patient" className='font-bold text-[#143D60]'>Patient's Login</Link>
              | 
             <Link to="/doctor" className='font-bold text-[#143D60]'>Doctor's Login</Link>
+            | 
+            <Link to="/admin" className='font-bold text-[#143D60]'>Admin's Login</Link>
           </p>
         </div>
       </div>
