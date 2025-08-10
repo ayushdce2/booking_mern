@@ -4,6 +4,10 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import PatientLogin from "./patient/pages/PatientLogin.jsx";
 import PatientHome from "./patient/pages/PatientHome.jsx";
+import AdminLogin from "./admin/pages/AdminLogin.jsx";
+import AdminHome from "./admin/pages/AdminHome.jsx";
+import DoctorLogin from "./doctor/pages/DoctorLogin.jsx";
+import DoctorHome from "./doctor/pages/DoctorHome.jsx";
 import Hospitalwebhome from "./hospitalweb/pages/Hospitalwebhome.jsx";
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
 
@@ -15,8 +19,15 @@ function App() {
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<Hospitalwebhome/>}></Route>
+      
       <Route path='/patient/*' element={<PatientHome/>}></Route>
       <Route path='/patient_login' element={<PatientLogin/>}></Route>
+
+      <Route path='/doctor/*' element={<DoctorHome/>}></Route>
+      <Route path='/doctor_login' element={<DoctorLogin/>}></Route>
+
+      <Route path='/admin/*' element={<AdminHome/>}></Route>
+      <Route path='/admin_login' element={<AdminLogin/>}></Route>
       {/* <Route path='/booking' element={<Login/>}></Route> */}
     </Routes>
   </BrowserRouter>

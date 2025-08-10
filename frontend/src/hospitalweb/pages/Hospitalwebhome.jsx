@@ -33,6 +33,15 @@ import "../assets/hospitalwebhome.css";
 const hospitalwebhome = () => {
   return (
     <div className=''>
+      <div>
+        <div className=''>
+          <p className='p-2 bg-[#A0C878] flex gap-4 justify-end'>
+            <Link to="" className='font-bold text-[#143D60]'>Patient's Login</Link>
+             | 
+            <Link to="" className='font-bold text-[#143D60]'>Doctor's Login</Link>
+          </p>
+        </div>
+      </div>
 
 
       <div className='flex justify-between items-center p-2 '>
@@ -285,19 +294,19 @@ const hospitalwebhome = () => {
         </div>
         <div className='flex gap-2 w-[90%] mx-auto'>
           <div className='rotating-border rotating-border--google '>
-            <p className='text-2xl font-semibold text-shadow-2xs text-center mt-7'>Expert Doctors & Specialists</p>
+            <p className='text-2xl font-semibold text-shadow-2xs text-center mt-7 tracking-normal'>Expert Doctors & Specialists</p>
             <p className='text-lg tracking-wider text-justify my-7'>Our hospital is home to a highly qualified team of doctors, surgeons, and medical staff dedicated to delivering world-class care across multiple specialties.</p>
           </div>
           <div className='rotating-border rotating-border--google '>
-            <p className='text-2xl font-semibold text-shadow-2xs text-center mt-7'>24/7 Emergency & Critical Care</p>
+            <p className='text-2xl font-semibold text-shadow-2xs text-center mt-7 tracking-normal'>24/7 Emergency & Critical Care</p>
             <p className='text-lg tracking-wider text-justify my-7 '>With fully equipped emergency and ICU facilities, we provide round-the-clock care for life-threatening conditions and urgent needs.</p>
           </div>
-          <div className='rotating-border rotating-border--google '>
-            <p className='text-2xl font-semibold text-shadow-2xs text-center mt-7'>State-of-the-Art Infrastructure</p>
+          <div className='rotating-border rotating-border--google '> 
+            <p className='text-2xl font-semibold text-shadow-2xs text-center mt-7 tracking-normal'>State-of-the-Art Infrastructure</p>
             <p className='text-lg tracking-wider text-justify  my-7'>From advanced diagnostics to modern operating theatres, our hospital is equipped with the latest medical technology to ensure accurate treatment.</p>
           </div>
           <div className='rotating-border rotating-border--google '>
-            <p className='text-2xl font-semibold text-shadow-2xs text-center mt-7'>Patient-Centric Approach</p>
+            <p className='text-2xl font-semibold text-shadow-2xs text-center mt-7 tracking-normal'>Patient-Centric Approach</p>
             <p className='text-lg tracking-wider text-justify  my-7'>We believe in personalized care that respects every patient’s needs, dignity, and comfort throughout their journey with us.</p>
           </div>
         </div>

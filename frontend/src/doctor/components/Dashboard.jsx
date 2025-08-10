@@ -104,8 +104,7 @@ const Dashboard = () => {
                   <th className='text-[#27374D] text-md font-bold '>Patient Name</th>
                   <th className='text-[#27374D] text-md font-bold '>Doctor</th>
                   <th className='text-[#27374D] text-md font-bold '>Department</th>
-                  <th className='text-[#27374D] text-md font-bold  text-center' colSpan={3}>Action</th>
-                  <th className='text-[#27374D] text-md font-bold '>Status</th>
+                  <th className='text-[#27374D] text-md font-bold  text-center' colSpan={2}>Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -118,9 +117,7 @@ const Dashboard = () => {
                   <td>Dr. John Doe</td>
                   <td>ENT</td>
                   <td>View Reports</td>
-                  <td>View Prescription</td>
-                  <td>EDIT</td>
-                  <td>Active / Expired</td>
+                  <td>View Medicines</td>
                 </tr>
                 <tr>
                   <td>1</td>
