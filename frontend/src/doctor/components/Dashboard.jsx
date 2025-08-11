@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
   return (
@@ -104,7 +105,7 @@ const Dashboard = () => {
                   <th className='text-[#27374D] text-md font-bold '>Patient Name</th>
                   <th className='text-[#27374D] text-md font-bold '>Doctor</th>
                   <th className='text-[#27374D] text-md font-bold '>Department</th>
-                  <th className='text-[#27374D] text-md font-bold  text-center' colSpan={2}>Action</th>
+                  <th className='text-[#27374D] text-md font-bold  text-center'>Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -116,8 +117,7 @@ const Dashboard = () => {
                   <td>John Doe</td>
                   <td>Dr. John Doe</td>
                   <td>ENT</td>
-                  <td>View Reports</td>
-                  <td>View Medicines</td>
+                  <td><Link to="/doctor/patient/allappointments">Click to View</Link></td>
                 </tr>
                 <tr>
                   <td>1</td>

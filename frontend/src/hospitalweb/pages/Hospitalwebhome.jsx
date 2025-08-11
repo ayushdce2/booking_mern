@@ -35,7 +35,7 @@ const hospitalwebhome = () => {
     <div className=''>
       <div>
         <div className=''>
-          <p className='p-2 bg-[#A0C878] flex gap-4 justify-end'>
+          <p className='p-2 bg-[#A0C878] flex gap-4 justify-end text-[0.8rem] md:text-[1rem]'>
             <Link to="/patient" className='font-bold text-[#143D60]'>Patient's Login</Link>
              | 
             <Link to="/doctor" className='font-bold text-[#143D60]'>Doctor's Login</Link>
@@ -47,10 +47,13 @@ const hospitalwebhome = () => {
 
 
       <div className='flex justify-between items-center p-2 '>
-        <div className='pl-10'>
+        <div className='md:pl-10'>
           <img src={Logo} className='w-[10rem]' />
         </div>
-        <div>
+        <div className='md:hidden'>
+          TOGGLE
+        </div>
+        <div className='hidden md:block'>
           <ul className='flex gap-5 items-center'>
             <li>
               <Link to={""} className='bg-[#143D60] p-2 rounded text-[#fff] font-semibold text-lg inline-block w-[7rem] text-center hover:bg-[#A0C878]'>Home</Link>
@@ -89,7 +92,7 @@ const hospitalwebhome = () => {
               className="h-full w-full bg-cover bg-center bg-no-repeat flex"
               style={{ backgroundImage: `url(${Background})` }}
             >
-              <div className='flex flex-col justify-center p-7 px-15'>
+              <div className='flex flex-col justify-center p-3 md:p-7 md:px-15'>
                 <h2 className='text-5xl font-bold text-[#143D60] text-shadow-2xs'>We Do The Best Practices</h2>
                 <p className='text-lg font-semibold text-[#143D60] mt-5 text-shadow-2xs'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, facere? Voluptas ut itaque nulla sequi molestias quaerat delectus nesciunt impedit assumenda ad? A, atque? Inventore rerum deserunt ab rem assumenda.</p>
                 <div className='flex gap-3 mt-5'>
@@ -99,8 +102,8 @@ const hospitalwebhome = () => {
                 </div>
 
               </div>
-              <div className='flex items-center justify-center w-full' >
-                <img src={Doctor} />
+              <div className='hidden md:flex items-center justify-center w-full' >
+                <img src={Doctor} className=''/>
               </div>
             </div>
           </SwiperSlide>
@@ -109,13 +112,13 @@ const hospitalwebhome = () => {
 
       </div>
 
-      <div className='px-10 flex gap-5 justify-around  bg-[#143D60] text-[#fff] p-10'>
+      <div className='p-2 md:px-10 md:p-10 md:flex gap-5 justify-around  bg-[#143D60] text-[#fff] '>
         <div className='flex flex-col gap-3 items-center'>
           <img src={Medical} className='w-[7rem]' />
           <p className='font-bold text-2xl'>Advanced Technology</p>
           <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis placerat urna. Nulla nulla diam, adipiscing non ornare non, commodo</p>
         </div>
-        <div className='flex flex-col gap-3 items-center border-l-1 border-r-1 border-[#DDEB9D]'>
+        <div className='flex flex-col gap-3 items-center md:border-l-1 md:border-r-1 border-[#DDEB9D] md:p-3'>
           <img src={healthicons} className='w-[7rem]' />
           <p className='font-bold text-2xl'>Healthcare Solutions</p>
           <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis placerat urna. Nulla nulla diam, adipiscing non ornare non, commodo</p>
@@ -129,7 +132,7 @@ const hospitalwebhome = () => {
 
       <div className=' flex my-5 w-[90%] mx-auto gap-3 '>
 
-        <div className='grow-1 relative rounded-b-2xl rounded-tl-2xl' style={{ backgroundImage: `URL(${happy})`, backgroundSize: "cover" }}>
+        <div className='grow-1 relative rounded-b-2xl rounded-tl-2xl hidden md:block' style={{ backgroundImage: `URL(${happy})`, backgroundSize: "cover" }}>
 
           {/* <img src={patient} className='absolute w-[30%] rounded-4xl bottom-2 right-2'/> */}
           <div className='absolute  bg-[#fff] p-5 border-l-1 border-t-1 border-[#fff] bottom-0 right-0 rounded-tl-2xl'>
@@ -168,10 +171,10 @@ const hospitalwebhome = () => {
         <div className='text-4xl font-bold text-[#DDEB9D] p-3 text-center'>
           <p>Our Services</p>
           <hr className='w-[40%] mx-auto bg-[#DDEB9D] p-[0.05rem] mt-2' />
-          <p className='text-lg w-[50%] mx-auto my-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis placerat urna. Nulla nulla diam, adipiscing non ornare non, commodo</p>
+          <p className='text-lg md:w-[50%] mx-auto my-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis placerat urna. Nulla nulla diam, adipiscing non ornare non, commodo</p>
 
         </div>
-        <div className='grid grid-cols-5 gap-3 py-5 px-3'>
+        <div className='grid md:grid-cols-5 gap-3 py-5 px-3'>
           <div className='boxShadow1  text-center rounded rotating-border rotating-border--google '>
             <img src={laboratory} className='w-[7rem] h-[7rem] mx-auto bg-[#DDEB9D] p-2 rounded' />
             <p className='text-3xl font-semibold text-shadow-2xs text-[#fff] my-7'>Laboratory</p>
@@ -207,10 +210,10 @@ const hospitalwebhome = () => {
         <div className='text-4xl font-bold text-[#143D60] p-3 text-center'>
           <p>Our Blogs</p>
           <hr className='w-[40%] mx-auto bg-[#143D60] p-[0.05rem] mt-2' />
-          <p className='text-lg w-[50%] mx-auto my-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis placerat urna. Nulla nulla diam, adipiscing non ornare non, commodo</p>
+          <p className='text-lg md:w-[50%] mx-auto my-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis placerat urna. Nulla nulla diam, adipiscing non ornare non, commodo</p>
 
         </div>
-        <div className='grid grid-cols-3 gap-3 py-5 px-3 w-[90%] mx-auto'>
+        <div className='grid md:grid-cols-3 gap-3 py-5 px-3 md:w-[90%] mx-auto'>
           <div className='flex items-center gap-2 boxShadow1 py-[1rem] px-[1rem] rounded'>
             <div className=' flex flex-col gap-3 '>
               <p className='text-2xl font-semibold text-shadow-2xs text-[#143D60]'>Covid-19 Information</p>
@@ -254,14 +257,14 @@ const hospitalwebhome = () => {
 
       </div>
 
-      <div className='my-20 bg-[#143D60] py-15'>
+      <div className='md:my-20 bg-[#143D60] py-15'>
         <div className='text-4xl font-bold text-[#DDEB9D] p-3 text-center'>
           <p>Our Achievements</p>
           <hr className='w-[40%] mx-auto bg-[#DDEB9D] p-[0.05rem] mt-2' />
-          <p className='text-lg w-[50%] mx-auto my-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis placerat urna. Nulla nulla diam, adipiscing non ornare non, commodo</p>
+          <p className='text-lg md:w-[50%] mx-auto my-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis placerat urna. Nulla nulla diam, adipiscing non ornare non, commodo</p>
 
         </div>
-        <div className='grid grid-cols-5 gap-3 py-5 px-3'>
+        <div className='grid md:grid-cols-5 gap-3 py-5 px-3'>
           <div className=' py-[4rem] text-center rounded rotating-border rotating-border--google'>
             <p className='text-6xl font-semibold text-shadow-2xs text-[#DDEB9D]'>7 +</p>
             <p className='mt-4 text-2xl font-semibold text-shadow-2xs text-[#A0C878]'>Years of Experience</p>
@@ -291,10 +294,10 @@ const hospitalwebhome = () => {
         <div className='text-4xl font-bold text-[#143D60] p-3 text-center'>
           <p>Why Choose Us</p>
           <hr className='w-[40%] mx-auto bg-[#DDEB9D] p-[0.05rem] mt-2' />
-          <p className='text-lg w-[50%] mx-auto my-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis placerat urna. Nulla nulla diam, adipiscing non ornare non, commodo</p>
+          <p className='text-lg md:w-[50%] mx-auto my-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis placerat urna. Nulla nulla diam, adipiscing non ornare non, commodo</p>
 
         </div>
-        <div className='flex gap-2 w-[90%] mx-auto'>
+        <div className='md:flex gap-2 w-[90%] mx-auto'>
           <div className='rotating-border rotating-border--google '>
             <p className='text-2xl font-semibold text-shadow-2xs text-center mt-7 tracking-normal'>Expert Doctors & Specialists</p>
             <p className='text-lg tracking-wider text-justify my-7'>Our hospital is home to a highly qualified team of doctors, surgeons, and medical staff dedicated to delivering world-class care across multiple specialties.</p>
@@ -315,7 +318,7 @@ const hospitalwebhome = () => {
       </div>
 
       <div className='bg-[#143D60] text-[#DDEB9D] py-10 '>
-        <div className='w-[90%] mx-auto grid grid-cols-[1.6fr_1fr_1fr_1fr] gap-4'>
+        <div className='w-[90%] mx-auto grid md:grid-cols-[1.6fr_1fr_1fr_1fr] gap-4'>
           <div>
             <p className='font-bold text-4xl'>Doctor Hospital</p>
             <hr className='bg-[#143D60] p-[0.05rem] mt-2' />

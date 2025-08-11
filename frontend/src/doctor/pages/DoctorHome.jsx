@@ -9,6 +9,9 @@ import TalkDoctor from '../components/TalkDoctor.jsx';
 import Profile from '../components/Profile.jsx';
 import Settings from '../components/Settings.jsx';
 import Notifications from '../components/Notifications.jsx';
+import Patient from '../components/Patient.jsx';
+import Prescription from '../components/Prescription.jsx';
+import AllAppointments from '../components/AllAppointments.jsx';
 
 
 const Homepage = () => {
@@ -20,7 +23,7 @@ const Homepage = () => {
       <div className='h-full p-2 pr-0 overflow-auto'>
         
         <div className={`${sidebar ? "flex absolute top-0 right-0 w-[50vw] bg-[#DDE6ED] pl-2" : "hidden"} md:flex gap-3 items-center  border-b-1 border-[#526D82] mb-3 pb-2 h-[3rem] `}>
-         <span className='text-2xl text-shadow-sm text-[#27374D] font-semibold'>Hi, Name</span>
+         <span className='text-2xl text-shadow-sm text-[#27374D] font-semibold'>Hi, Doc. Name</span>
         </div>
         <div className={`h-[calc(100vh-5rem)] ${sidebar ? "flex absolute top-12 right-0 w-[50vw]" : "hidden"} md:flex flex-col justify-between  text-[#27374D] bg-[#DDE6ED] p-2 rounded`}>
           <ul>
@@ -28,8 +31,8 @@ const Homepage = () => {
               <Link className={`flex gap-2 p-2 mb-2 rounded ${pathname == "/doctor" ? "bg-[#27374D] text-[#DDE6ED] " : "bg-[#9DB2BF]" } `} to="/doctor">
                 <img src='/images/dashboard.svg'/> <span className='text-md font-semibold'>Dashboard</span>
               </Link>
-              <Link className={`flex gap-2 p-2 mb-2 rounded  bg-[#9DB2BF]' ${pathname === "/doctor/choosedoc" || pathname === "/doctor/choosedoc/booking" || pathname === "/doctor/choosedoc/booking/registration" || pathname === "/doctor/choosedoc/booking/bookingsummary" || pathname === "/doctor/choosedoc/booking/payment" ? "bg-[#27374D] text-[#DDE6ED] " : "bg-[#9DB2BF]" } `} to="/doctor/choosedoc" >
-                <img src='/images/dashboard.svg'/> <span className='text-md font-semibold'>Appointment Booking</span>
+              <Link className={`flex gap-2 p-2 mb-2 rounded  bg-[#9DB2BF]' ${pathname === "/doctor/patient" || pathname === "/doctor/patient/allappointments" || pathname === "/doctor/patient/prescription"  ? "bg-[#27374D] text-[#DDE6ED] " : "bg-[#9DB2BF]" } `} to="/doctor/patient" >
+                <img src='/images/dashboard.svg'/> <span className='text-md font-semibold'>All Patients</span>
               </Link>
               {/* <Link className='flex gap-2 p-2 mb-2 rounded  bg-[#9DB2BF]'>
                 <img src='/images/dashboard.svg'/> <span className='text-md font-semibold'>All Reports</span>
@@ -88,11 +91,10 @@ const Homepage = () => {
             <Route path="/profile" element={<Profile />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/notifications" element={<Notifications />} />            
-            <Route path="/choosedoc/*" element={<ChooseDoc />} />
-            <Route path="/choosedoc/booking" element={<Booking />} />
-            <Route path="/choosedoc/booking/payment" element={<Payment />} />
-            <Route path="/choosedoc/booking/bookingsummary" element={<BookingSummary />} />
-            <Route path="/talkdoctor/" element={<TalkDoctor />} />
+            <Route path="/patient" element={<Patient />} />
+            <Route path="/patient/allappointments" element={<AllAppointments />} />
+            <Route path="/patient/prescription" element={<Prescription />} />
+            
             
           </Routes>
 

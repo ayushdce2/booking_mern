@@ -75,7 +75,7 @@ const Dashboard = () => {
         </div>
 
         <div className='ml-2 mt-3  p-2 rounded bg-[#DDE6ED]'>
-          <div className='flex gap-5 bg-[#9DB2BF] p-3 rounded'>
+          <div className='md:flex gap-5 bg-[#9DB2BF] p-3 rounded'>
             <div>
                 <p className='font-bold text-lg text-[#27374D]'>Appointment Summary</p>
             </div>

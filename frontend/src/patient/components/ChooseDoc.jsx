@@ -14,14 +14,14 @@ const ChooseDoc = () => {
                 <p>Sort By : </p>
             </div>
             <div>
-                <select className='boxShadow1 w-[10rem] p-1 rounded focus:outline-0'>
+                <select className='boxShadow1 md:w-[10rem] p-1 rounded focus:outline-0'>
                     <option>Department</option>
                     <option>one</option>
                     <option>one</option>
                 </select>
             </div>
             <div>
-                <select className='boxShadow1 w-[10rem] p-1 rounded focus:outline-0'>
+                <select className='boxShadow1 md:w-[10rem] p-1 rounded focus:outline-0'>
                     <option>Experience</option>
                     <option>one</option>
                     <option>one</option>
@@ -29,16 +29,16 @@ const ChooseDoc = () => {
             </div>
         </div>
         <div className='ml-2 bg-[#DDE6ED] p-2 flex flex-col items-center gap-5 overflow-auto h-[calc(80vh-3.8rem)]'>
-            <div className='flex items-center p-2 rounded w-full boxShadow1 hover:bg-[#fff]'>
+            <div className='md:flex items-center p-2 rounded w-full boxShadow1 hover:bg-[#fff]'>
                 <div>
                     <img src='/images/user.png' className='w-[5rem] h-[5rem]'/>
                 </div>
-                <div className='flex grow-1 justify-between'>
+                <div className='md:flex grow-1 justify-between'>
                     <div className=' pl-5'>
                         <p className='text-lg font-bold text-[#27374D]'>Dr. John</p>
                         <p className='text-sm text-[#27374D]'>MBBS </p>
                     </div>
-                    <div className=''>
+                    <div className='my-3 md:m-0'>
                          
                         <p className='text-md text-[#27374D]'><span className='font-bold'>Speciality : </span>High risk pregnancies with all minor and major Obst. & Gynae Surgeries.</p>
                         <p className='text-md text-[#27374D]'><span className='font-bold'>Areas of Expertise : </span>High risk pregnancies with all minor and major Obst. & Gynae Surgeries.</p>
@@ -49,125 +49,9 @@ const ChooseDoc = () => {
                 </div>
             </div>
 
-            <div className='flex items-center p-2 rounded w-full boxShadow1 hover:bg-[#fff]'>
-                <div>
-                    <img src='/images/user.png' className='w-[5rem] h-[5rem]'/>
-                </div>
-                <div className='flex grow-1 justify-between'>
-                    <div className=' pl-5'>
-                        <p className='text-lg font-bold text-[#27374D]'>Dr. John</p>
-                        <p className='text-sm text-[#27374D]'>MBBS </p>
-                    </div>
-                    <div className=''>
-                         
-                        <p className='text-md text-[#27374D]'><span className='font-bold'>Speciality : </span>High risk pregnancies with all minor and major Obst. & Gynae Surgeries.</p>
-                        <p className='text-md text-[#27374D]'><span className='font-bold'>Areas of Expertise : </span>High risk pregnancies with all minor and major Obst. & Gynae Surgeries.</p>
-                    </div>
-                    <div className=''>
-                        <Link to="/patient/choosedoc/booking" className='text-md text-[#DDE6ED] bg-[#27374D] p-2 rounded cursor-pointer'>Book Now</Link>
-                    </div>
-                </div>
-            </div>
+            
 
-            <div className='flex items-center p-2 rounded w-full boxShadow1 hover:bg-[#fff]'>
-                <div>
-                    <img src='/images/user.png' className='w-[5rem] h-[5rem]'/>
-                </div>
-                <div className='flex grow-1 justify-between'>
-                    <div className=' pl-5'>
-                        <p className='text-lg font-bold text-[#27374D]'>Dr. John</p>
-                        <p className='text-sm text-[#27374D]'>MBBS </p>
-                    </div>
-                    <div className=''>
-                         
-                        <p className='text-md text-[#27374D]'><span className='font-bold'>Speciality : </span>High risk pregnancies with all minor and major Obst. & Gynae Surgeries.</p>
-                        <p className='text-md text-[#27374D]'><span className='font-bold'>Areas of Expertise : </span>High risk pregnancies with all minor and major Obst. & Gynae Surgeries.</p>
-                    </div>
-                    <div className=''>
-                        <Link to="/patient/choosedoc/booking" className='text-md text-[#DDE6ED] bg-[#27374D] p-2 rounded cursor-pointer'>Book Now</Link>
-                    </div>
-                </div>
-            </div>
-
-            <div className='flex items-center p-2 rounded w-full boxShadow1 hover:bg-[#fff]'>
-                <div>
-                    <img src='/images/user.png' className='w-[5rem] h-[5rem]'/>
-                </div>
-                <div className='flex grow-1 justify-between'>
-                    <div className=' pl-5'>
-                        <p className='text-lg font-bold text-[#27374D]'>Dr. John</p>
-                        <p className='text-sm text-[#27374D]'>MBBS </p>
-                    </div>
-                    <div className=''>
-                         
-                        <p className='text-md text-[#27374D]'><span className='font-bold'>Speciality : </span>High risk pregnancies with all minor and major Obst. & Gynae Surgeries.</p>
-                        <p className='text-md text-[#27374D]'><span className='font-bold'>Areas of Expertise : </span>High risk pregnancies with all minor and major Obst. & Gynae Surgeries.</p>
-                    </div>
-                    <div className=''>
-                        <Link to="/patient/choosedoc/booking" className='text-md text-[#DDE6ED] bg-[#27374D] p-2 rounded cursor-pointer'>Book Now</Link>
-                    </div>
-                </div>
-            </div>
-
-            <div className='flex items-center p-2 rounded w-full boxShadow1 hover:bg-[#fff]'>
-                <div>
-                    <img src='/images/user.png' className='w-[5rem] h-[5rem]'/>
-                </div>
-                <div className='flex grow-1 justify-between'>
-                    <div className=' pl-5'>
-                        <p className='text-lg font-bold text-[#27374D]'>Dr. John</p>
-                        <p className='text-sm text-[#27374D]'>MBBS </p>
-                    </div>
-                    <div className=''>
-                         
-                        <p className='text-md text-[#27374D]'><span className='font-bold'>Speciality : </span>High risk pregnancies with all minor and major Obst. & Gynae Surgeries.</p>
-                        <p className='text-md text-[#27374D]'><span className='font-bold'>Areas of Expertise : </span>High risk pregnancies with all minor and major Obst. & Gynae Surgeries.</p>
-                    </div>
-                    <div className=''>
-                        <Link to="/patient/choosedoc/booking" className='text-md text-[#DDE6ED] bg-[#27374D] p-2 rounded cursor-pointer'>Book Now</Link>
-                    </div>
-                </div>
-            </div>
-
-            <div className='flex items-center p-2 rounded w-full boxShadow1 hover:bg-[#fff]'>
-                <div>
-                    <img src='/images/user.png' className='w-[5rem] h-[5rem]'/>
-                </div>
-                <div className='flex grow-1 justify-between'>
-                    <div className=' pl-5'>
-                        <p className='text-lg font-bold text-[#27374D]'>Dr. John</p>
-                        <p className='text-sm text-[#27374D]'>MBBS </p>
-                    </div>
-                    <div className=''>
-                         
-                        <p className='text-md text-[#27374D]'><span className='font-bold'>Speciality : </span>High risk pregnancies with all minor and major Obst. & Gynae Surgeries.</p>
-                        <p className='text-md text-[#27374D]'><span className='font-bold'>Areas of Expertise : </span>High risk pregnancies with all minor and major Obst. & Gynae Surgeries.</p>
-                    </div>
-                    <div className=''>
-                        <Link to="/patient/choosedoc/booking" className='text-md text-[#DDE6ED] bg-[#27374D] p-2 rounded cursor-pointer'>Book Now</Link>
-                    </div>
-                </div>
-            </div>
-
-            <div className='flex items-center p-2 rounded w-full boxShadow1 hover:bg-[#fff]'>
-                <div>
-                    <img src='/images/user.png' className='w-[5rem] h-[5rem]'/>
-                </div>
-                <div className='flex grow-1 justify-between'>
-                    <div className=' pl-5'>
-                        <p className='text-lg font-bold text-[#27374D]'>Dr. John</p>
-                        <p className='text-sm text-[#27374D]'>MBBS </p>
-                    </div>
-                    <div className=''>
-                         
-                        <p className='text-md text-[#27374D]'><span className='font-bold'>Speciality : </span>High risk pregnancies with all minor and major Obst. & Gynae Surgeries.</p>
-                        <p className='text-md text-[#27374D]'><span className='font-bold'>Areas of Expertise : </span>High risk pregnancies with all minor and major Obst. & Gynae Surgeries.</p>
-                    </div>
-                    <div className=''>
-                        <Link to="/patient/choosedoc/booking" className='text-md text-[#DDE6ED] bg-[#27374D] p-2 rounded cursor-pointer'>Book Now</Link>
-                    </div>
-                </div>
-            </div>
+            
 
             
 
