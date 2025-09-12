@@ -30,17 +30,18 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import "../assets/hospitalwebhome.css";
 
+
 const hospitalwebhome = () => {
   return (
     <div className=''>
       <div>
         <div className=''>
           <p className='p-2 bg-[#A0C878] flex gap-4 justify-end text-[0.8rem] md:text-[1rem]'>
-            <Link to="/patient" className='font-bold text-[#143D60]'>Patient's Login</Link>
+            <Link to="/patient" className='font-bold text-[#143D60]' target="_blank">Patient's Login</Link>
              | 
-            <Link to="/doctor" className='font-bold text-[#143D60]'>Doctor's Login</Link>
+            <Link to="/doctor" className='font-bold text-[#143D60]' target="_blank">Doctor's Login</Link>
             | 
-            <Link to="/admin" className='font-bold text-[#143D60]'>Admin's Login</Link>
+            <Link to="/admin" className='font-bold text-[#143D60]' target="_blank">Admin's Login</Link>
           </p>
         </div>
       </div>
