@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Link} from "react-router-dom"
 
 const Dashboard = () => {
   return (
@@ -87,14 +88,14 @@ const Dashboard = () => {
               </select>
             </div>
             <div className='flex gap-2'>
-              <input type='search' className='border-1'/><button>Search</button>
+              <input type='search' className='border-1'/><Link to="" className='text-md text-[#DDE6ED] bg-[#27374D] p-1 rounded cursor-pointer'>Search</Link>
             </div>
             <div>
               <img src='./images/daterange.svg' />
             </div>
           </div>
         </div>
-          <div className='ml-2  p-3 bg-[#DDE6ED] overflow-auto h-[calc(49vh-1.2rem)]'>
+          <div className='ml-2  p-3 bg-[#DDE6ED] overflow-auto h-[calc(49vh-1.5rem)]'>
             <table className=' my_dashboard_table'>
               <thead>
                 <tr>
@@ -117,9 +118,9 @@ const Dashboard = () => {
                   <td>John Doe</td>
                   <td>Dr. John Doe</td>
                   <td>ENT</td>
-                  <td>View Reports</td>
-                  <td>View Prescription</td>
-                  <td>EDIT</td>
+                  <td><Link to="" className='text-md text-[#DDE6ED] bg-[#27374D] p-1 rounded cursor-pointer'>View Reports</Link></td>
+                  <td><Link to="" className='text-md text-[#DDE6ED] bg-[#27374D] p-1 rounded cursor-pointer'>View Prescription</Link></td>
+                  <td><Link to="" className='text-md text-[#DDE6ED] bg-[#27374D] p-1 rounded cursor-pointer'>EDIT</Link></td>
                   <td>Active / Expired</td>
                 </tr>
                 <tr>

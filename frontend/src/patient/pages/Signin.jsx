@@ -35,10 +35,10 @@ const Signin = () => {
                 </div>
                 
                 <div className=''>
-                    <button type="button" className="text-white bg-[#4682A9] hover:bg-[#749BC2] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 cursor-pointer">
+                    <Link to={"/patient/patienthome"} type="button" className="text-white bg-[#4682A9] hover:bg-[#749BC2] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 cursor-pointer">
                         <img src='/images/login.svg' />
                         SignIn
-                        </button>
+                        </Link>
                         
                 </div>
                 <div>

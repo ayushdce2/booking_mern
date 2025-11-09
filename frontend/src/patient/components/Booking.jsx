@@ -142,7 +142,7 @@ const Booking = () => {
                     </div>
 
 
-                    <Link to="/patient/choosedoc/booking/payment" className='text-center bg-[#27374D] p-3 rounded text-[#DDE6ED] mx-[auto] w-[50%]'>Next </Link>
+                    <Link to="/patient/patienthome/choosedoc/booking/payment" className='text-center bg-[#27374D] p-3 rounded text-[#DDE6ED] mx-[auto] w-[50%]'>Next </Link>
 
 
 

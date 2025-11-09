@@ -44,7 +44,7 @@ const ChooseDoc = () => {
                         <p className='text-md text-[#27374D]'><span className='font-bold'>Areas of Expertise : </span>High risk pregnancies with all minor and major Obst. & Gynae Surgeries.</p>
                     </div>
                     <div className=''>
-                        <Link to="/patient/choosedoc/booking" className='text-md text-[#DDE6ED] bg-[#27374D] p-2 rounded cursor-pointer'>Book Now</Link>
+                        <Link to="/patient/patienthome/choosedoc/booking" className='text-md text-[#DDE6ED] bg-[#27374D] p-2 rounded cursor-pointer'>Book Now</Link>
                     </div>
                 </div>
             </div>

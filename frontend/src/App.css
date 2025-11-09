@@ -9,6 +9,7 @@
 .my_dashboard_table thead tr th{
     background-color: #9DB2BF;
     padding: 0.5rem 1rem;
+    outline: 1px solid #ddd;
 }
 .my_dashboard_table tbody tr td{
     padding: 0.5rem;

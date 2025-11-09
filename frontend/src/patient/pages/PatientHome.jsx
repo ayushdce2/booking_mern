@@ -9,6 +9,7 @@ import TalkDoctor from '../components/TalkDoctor.jsx';
 import Profile from '../components/Profile.jsx';
 import Settings from '../components/Settings.jsx';
 import Notifications from '../components/Notifications.jsx';
+import Logout from '../components/Logout.jsx';
 import SymptomsChecker from '../components/SymptomsChecker.jsx';
 
 
@@ -26,10 +27,10 @@ const Homepage = () => {
         <div className={`h-[calc(100vh-5rem)] ${sidebar ? "flex absolute top-12 right-0 w-[50vw]" : "hidden"} md:flex flex-col justify-between  text-[#27374D] bg-[#DDE6ED] p-2 rounded`}>
           <ul>
             <li className=' '>
-              <Link className={`flex gap-2 p-2 mb-2 rounded ${pathname == "/patient" ? "bg-[#27374D] text-[#DDE6ED] " : "bg-[#9DB2BF]" } `} to="/patient">
+              <Link className={`flex gap-2 p-2 mb-2 rounded ${pathname == "/patient/patienthome" ? "bg-[#27374D] text-[#DDE6ED] " : "bg-[#9DB2BF]" } `} to="/patient/patienthome">
                 <img src='/images/dashboard.svg'/> <span className='text-md font-semibold'>Dashboard</span>
               </Link>
-              <Link className={`flex gap-2 p-2 mb-2 rounded  bg-[#9DB2BF]' ${pathname === "/patient/choosedoc" || pathname === "/patient/choosedoc/booking" || pathname === "/patient/choosedoc/booking/registration" || pathname === "/patient/choosedoc/booking/bookingsummary" || pathname === "/patient/choosedoc/booking/payment" ? "bg-[#27374D] text-[#DDE6ED] " : "bg-[#9DB2BF]" } `} to="/patient/choosedoc" >
+              <Link className={`flex gap-2 p-2 mb-2 rounded  bg-[#9DB2BF]' ${pathname === "/patient/patienthome/choosedoc" || pathname === "/patient/patienthome/choosedoc/booking" || pathname === "/patient/patienthome/choosedoc/booking/registration" || pathname === "/patient/patienthome/choosedoc/booking/bookingsummary" || pathname === "/patient/patienthome/choosedoc/booking/payment" ? "bg-[#27374D] text-[#DDE6ED] " : "bg-[#9DB2BF]" } `} to="/patient/patienthome/choosedoc" >
                 <img src='/images/dashboard.svg'/> <span className='text-md font-semibold'>Appointment Booking</span>
               </Link>
               {/* <Link className='flex gap-2 p-2 mb-2 rounded  bg-[#9DB2BF]'>
@@ -38,10 +39,10 @@ const Homepage = () => {
               <Link className='flex gap-2 p-2 mb-2 rounded  bg-[#9DB2BF]'>
                 <img src='/images/dashboard.svg'/> <span className='text-md font-semibold'>Medicine Record</span>
               </Link> */}
-              <Link className={`flex gap-2 p-2 mb-2 rounded  bg-[#9DB2BF] ${pathname == "/patient/talkdoctor" ? "bg-[#27374D] text-[#DDE6ED] " : "bg-[#9DB2BF]" } `} to="/patient/talkdoctor">
+              <Link className={`flex gap-2 p-2 mb-2 rounded  bg-[#9DB2BF] ${pathname == "/patient/patienthome/talkdoctor" ? "bg-[#27374D] text-[#DDE6ED] " : "bg-[#9DB2BF]" } `} to="/patient/patienthome/talkdoctor">
                 <img src='/images/dashboard.svg'/> <span className='text-md font-semibold'>Talk Doctor</span>
               </Link>
-              <Link className={`flex gap-2 p-2 mb-2 rounded  bg-[#9DB2BF] ${pathname == "/patient/symptomschecker" ? "bg-[#27374D] text-[#DDE6ED] " : "bg-[#9DB2BF]" } `} to="/patient/symptomschecker">
+              <Link className={`flex gap-2 p-2 mb-2 rounded  bg-[#9DB2BF] ${pathname == "/patient/patienthome/symptomschecker" ? "bg-[#27374D] text-[#DDE6ED] " : "bg-[#9DB2BF]" } `} to="/patient/patienthome/symptomschecker">
                 <img src='/images/dashboard.svg'/> <span className='text-md font-semibold'>Symptom Checker (AI)</span>
               </Link>
               
@@ -51,10 +52,10 @@ const Homepage = () => {
           
           <ul>
             <li className=' '>
-              <Link className={`flex gap-2 p-2 mb-2 rounded  bg-[#9DB2BF] ${pathname == "/patient/profile" ? "bg-[#27374D] text-[#DDE6ED] " : "bg-[#9DB2BF]" } `} to="/patient/profile">
+              <Link className={`flex gap-2 p-2 mb-2 rounded  bg-[#9DB2BF] ${pathname == "/patient/patienthome/profile" ? "bg-[#27374D] text-[#DDE6ED] " : "bg-[#9DB2BF]" } `} to="/patient/patienthome/profile">
                 <img src='/images/user.svg'/> <span className='text-md font-semibold'>Profile</span>
               </Link>
-              <Link className={`flex gap-2 p-2 mb-2 rounded  bg-[#9DB2BF] ${pathname == "/patient/settings" ? "bg-[#27374D] text-[#DDE6ED] " : "bg-[#9DB2BF]" } `}   to="/patient/settings">
+              <Link className={`flex gap-2 p-2 mb-2 rounded  bg-[#9DB2BF] ${pathname == "/patient/patienthome/settings" ? "bg-[#27374D] text-[#DDE6ED] " : "bg-[#9DB2BF]" } `}   to="/patient/patienthome/settings">
                 <img src='/images/settings.svg'/> <span className='text-md font-semibold'>Settings</span>
               </Link>
               
@@ -76,13 +77,13 @@ const Homepage = () => {
             <img src='/images/settings.svg'/>
           </div> */}
           <div>
-              <Link to="/patient/notifications"> 
-                <img src='/images/notification.svg' className={`${pathname == "/patient/notifications" ? "bg-[#526D82] rounded text-[#DDE6ED] " : "bg-[#9DB2BF]" } `}/>
+              <Link to="/patient/patienthome/notifications"> 
+                <img src='/images/notification.svg' className={`${pathname == "/patient/patienthome/notifications" ? "bg-[#526D82] rounded text-[#DDE6ED] " : "bg-[#9DB2BF]" } `}/>
               </Link>
           </div>
           <div>
-            <Link to="/patient/logout">
-              <img src='/images/logout.svg' className={`w-[1.3rem] cursor-pointer ${pathname == "/patient/logout" ? "bg-[#526D82] rounded text-[#DDE6ED] " : "bg-[#9DB2BF]" } `}/>
+            <Link to="/patient/patienthome/logout">
+              <img src='/images/logout.svg' className={`w-[1.3rem] cursor-pointer ${pathname == "/patient/patienthome/logout" ? "bg-[#526D82] rounded text-[#DDE6ED] " : "bg-[#9DB2BF]" } `}/>
             </Link>
           </div>
           
@@ -92,13 +93,14 @@ const Homepage = () => {
             <Route path="/" element={<Dashboard />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/settings" element={<Settings />} />
-            <Route path="/notifications" element={<Notifications />} />            
+            <Route path="/notifications" element={<Notifications />} />
+            <Route path="/logout" element={<Logout />} />            
             <Route path="/choosedoc/*" element={<ChooseDoc />} />
             <Route path="/choosedoc/booking" element={<Booking />} />
             <Route path="/choosedoc/booking/payment" element={<Payment />} />
             <Route path="/choosedoc/booking/bookingsummary" element={<BookingSummary />} />
             <Route path="/talkdoctor/" element={<TalkDoctor />} />
-            <Route path="/SymptomsChecker/" element={<SymptomsChecker />} />
+            <Route path="/SymptomsChecker" element={<SymptomsChecker />} />
             
           </Routes>
 

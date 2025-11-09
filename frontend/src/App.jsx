@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import PatientLogin from "./patient/pages/PatientLogin.jsx";
-// import PatientHome from "./patient/pages/PatientHome.jsx";
+import PatientHome from "./patient/pages/PatientHome.jsx";
 import AdminLogin from "./admin/pages/AdminLogin.jsx";
 // import AdminHome from "./admin/pages/AdminHome.jsx";
 import DoctorLogin from "./doctor/pages/DoctorLogin.jsx";
@@ -21,6 +21,7 @@ function App() {
       <Route path='/' element={<Hospitalwebhome/>}></Route>
       
       <Route path='/patient/*' element={<PatientLogin/>}></Route>
+      <Route path='/patient/patienthome/*' element={<PatientHome/>}></Route>
 
       <Route path='/doctor/*' element={<DoctorLogin/>}></Route>
 

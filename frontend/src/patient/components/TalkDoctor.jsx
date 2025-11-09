@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Link} from "react-router-dom"
 
 const TalkDoctor = () => {
   return (
@@ -29,8 +30,8 @@ const TalkDoctor = () => {
                   <td>John Doe</td>
                   <td>Dr. John Doe</td>
                   <td>ENT</td>
-                  <td>Chat Now</td>
-                  <td>Video Call</td>
+                  <td><Link to="" className='text-md text-[#DDE6ED] bg-[#27374D] p-1 rounded cursor-pointer'>Chat Now</Link></td>
+                  <td><Link to="" className='text-md text-[#DDE6ED] bg-[#27374D] p-1 rounded cursor-pointer'>Video Call</Link></td>
                 </tr>
                 </tbody>
                 </table>
