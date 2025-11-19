@@ -1,21 +1,21 @@
-import React from 'react';
-import useLogout from './hook/useLogout.jsx';
-import useFetchUserDetails from "./hook/useFetchUserDetails.jsx";
 
-const Logout = () => {
+// import { ToastContainer } from "react-toastify";
+import useLogout from './hook/useLogout.jsx';
+import useFetchUserDetails from "../pages/hook/useFetchUserDetails.jsx";
+
+
+const Home = () => {
 
   const { loggedInUser, handleLogout } = useLogout();
-
   const { userProfileDetails } = useFetchUserDetails();
+
   return (
     <>
-        <div className='ml-2 bg-[#DDE6ED] p-2 rounded'>
-          <p className='text-2xl font-bold text-[#27374D]'>Logout</p>
-          <p className='italic text-[#526D82] font-semibold'>Subheading goes here</p>
-        </div>
 
-        <button onClick={handleLogout}>LOGOUT</button>
+      <div>{loggedInUser}</div>
+      <button onClick={handleLogout}>LOGOUT</button>
 
+      <div>
         <ul>
           {
             userProfileDetails?.map((data, index) => {
@@ -39,8 +39,14 @@ const Logout = () => {
             })
           }
         </ul>
+      </div>
+
+
+
+
+      {/* <ToastContainer /> */}
     </>
   )
 }
 
-export default Logout
+export default Home

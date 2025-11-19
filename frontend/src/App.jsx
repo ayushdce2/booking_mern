@@ -1,35 +1,41 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import {ToastContainer} from "react-toastify";
 import './App.css'
-import PatientLogin from "./patient/pages/PatientLogin.jsx";
+import Appointment from "./main_components/Appointment.jsx";
 import PatientHome from "./patient/pages/PatientHome.jsx";
-import AdminLogin from "./admin/pages/AdminLogin.jsx";
+// import AdminLogin from "./admin/pages/AdminLogin.jsx";
 // import AdminHome from "./admin/pages/AdminHome.jsx";
-import DoctorLogin from "./doctor/pages/DoctorLogin.jsx";
+// import DoctorLogin from "./doctor/pages/DoctorLogin.jsx";
 // import DoctorHome from "./doctor/pages/DoctorHome.jsx";
 import Hospitalwebhome from "./hospitalweb/pages/Hospitalwebhome.jsx";
-import { BrowserRouter, Routes,Route } from 'react-router-dom';
+import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+import RefreshHandler from './main_components/RefreshHandler.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
+
+const [isAuthenticated,setisAuthenticated]=useState(false);
+    const PrivateRoute=({element})=>{
+      return isAuthenticated ? element : <Navigate to="/appointment" />
+    }
 
   return (
     <>
   <BrowserRouter>
+  <RefreshHandler setisAuthenticated={setisAuthenticated}/>
     <Routes>
       <Route path='/' element={<Hospitalwebhome/>}></Route>
       
-      <Route path='/patient/*' element={<PatientLogin/>}></Route>
-      <Route path='/patient/patienthome/*' element={<PatientHome/>}></Route>
+      <Route path='/appointment/*' element={<Appointment/>}></Route>
+      
+      <Route path={"/patient/patienthome/*"} element={<PrivateRoute element={<PatientHome/>}/>}></Route>
 
-      <Route path='/doctor/*' element={<DoctorLogin/>}></Route>
+      {/* <Route path='/doctor/*' element={<DoctorLogin/>}></Route> */}
 
-      <Route path='/admin/*' element={<AdminLogin/>}></Route>
+      {/* <Route path='/admin/*' element={<AdminLogin/>}></Route> */}
 
     </Routes>
   </BrowserRouter>
-      
+      <ToastContainer/>
     </>
   )
 }

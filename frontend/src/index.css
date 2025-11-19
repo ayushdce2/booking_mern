@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.Toastify__progress-bar--error {
+  background-color: #71b1e5!important;
+}

@@ -39,7 +39,7 @@ const Forget = () => {
                                 
                         </div>
                         <div>
-                            <Link to="/patient/" className='text-sm text-[#4682A9] font-bold text-shadow-2xs'>Remember Password ? SignIn Now !</Link> 
+                            <Link to="/appointment" className='text-sm text-[#4682A9] font-bold text-shadow-2xs'>Remember Password ? SignIn Now !</Link> 
                         </div>
         
                     </form>

@@ -5,7 +5,7 @@ import Signin from './Signin.jsx';
 import Signup from './Signup.jsx';
 import Forget from './Forget.jsx';
 
-const Login = () => {
+const Appointment = () => {
   return (
     <div className='h-[100vh] w-[100vw] grid place-items-center mywrapperbg '>
         <div className='grid grid-cols-1 md:grid-cols-2 border-8 border-[#91C8E4] rounded h-[80%] w-[95%] md:w-[80%] '>
@@ -29,4 +29,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Appointment
