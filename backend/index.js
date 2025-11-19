@@ -16,6 +16,14 @@ app.get("/",(req,res)=>{
     console.log("hi");
     res.send("Hello World");
 })
+const path = require("path");
+// --- FRONTEND BUILD ---
+app.use(express.static(path.join(__dirname, "dist")));
+
+// --- CATCH-ALL ROUTE ---
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "dist", "index.html"));
+});
 
 const PORT = process.env.PORT;
 
